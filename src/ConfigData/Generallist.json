@@ -1,0 +1,4976 @@
+{
+  "Gender": [
+    {
+      "label": "male",
+      "value": 1
+    },
+    {
+      "label": "female",
+      "value": 2
+    }
+  ],
+  "ExtraWorkType": [
+    {
+      "label": "Weekend",
+      "value": 1
+    },
+    {
+      "label": "Holiday",
+      "value": 2
+    },
+    {
+      "label": "All",
+      "value": 3
+    }
+  ],
+  "OverTimeType": [
+    {
+      "label": "before",
+      "value": 1
+    },
+    {
+      "label": "after",
+      "value": 2
+    },
+    {
+      "label": "beforeAndAfter",
+      "value": 3
+    },
+    {
+      "label": "beforeOrAfter",
+      "value": 4
+    }
+  ],
+  "NoYes": [
+    {
+      "label": "no",
+      "value": 1
+    },
+    {
+      "label": "yes",
+      "value": 2
+    }
+  ],
+  "MaritalStatus": [
+    {
+      "label": "single",
+      "value": 0
+    },
+    {
+      "label": "married",
+      "value": 1
+    },
+    {
+      "label": "marriedWithChildren",
+      "value": 2
+    },
+    {
+      "label": "divorced",
+      "value": 3
+    },
+    {
+      "label": "widowed",
+      "value": 4
+    }
+  ],
+  "MaritalStatusCombined": [
+    {
+      "label": "single",
+      "value": 0
+    },
+    {
+      "label": "divorced",
+      "value": 3
+    },
+    {
+      "label": "widowed",
+      "value": 4
+    },
+    {
+      "label": "marriedSpouseNotWorking",
+      "value": 5
+    },
+    {
+      "label": "marriedSpouseWorking",
+      "value": 6
+    },
+    {
+      "label": "marriedWithChildrenSpouseNotWorking",
+      "value": 7
+    },
+    {
+      "label": "marriedWithChildrenSpouseWorking",
+      "value": 8
+    }
+  ],
+  "SalaryItemCalcMethodType": [
+    {
+      "label": "fixedAmount",
+      "value": 1
+    },
+    {
+      "label": "salaryItemGroup",
+      "value": 2
+    },
+    {
+      "label": "equation",
+      "value": 3
+    },
+    {
+      "label": "globalFixedAmount",
+      "value": 4
+    },
+    {
+      "label": "variableAmount",
+      "value": 5
+    },
+    {
+      "label": "systemFixedAmount",
+      "value": 6
+    }
+  ],
+  "SalaryItemType": [
+    {
+      "label": "allowance",
+      "value": 1
+    },
+    {
+      "label": "deductions",
+      "value": 2
+    }
+  ],
+  "Operator": [
+    {
+      "label": "plus",
+      "value": 1
+    },
+    {
+      "label": "minus",
+      "value": 2
+    },
+    {
+      "label": "multiplication",
+      "value": 3
+    },
+    {
+      "label": "division",
+      "value": 4
+    }
+  ],
+  "OperandType": [
+    {
+      "label": "age",
+      "value": 0
+    },
+    {
+      "label": "experienceYears",
+      "value": 1
+    },
+    {
+      "label": "absenceDays",
+      "value": 2
+    },
+    {
+      "label": "overtimeHours",
+      "value": 3
+    },
+    {
+      "label": "delayHours",
+      "value": 4
+    },
+    {
+      "label": "missionCount",
+      "value": 5
+    },
+    {
+      "label": "missionDays",
+      "value": 6
+    },
+    {
+      "label": "overtimeCount",
+      "value": 7,
+      "Operand": {
+        "params": [
+          {
+            "name": "threshold",
+            "label": "thresholdInMinutes",
+            "type": "number",
+            "defaultValue": 30
+          },
+          {
+            "name": "type",
+            "label": "type",
+            "type": "generallist",
+            "endpoint": "OverTimeType",
+            "defaultValue": 1
+          },
+          {
+            "name": "ignoreDelay",
+            "label": "ignoreDelay",
+            "type": "generallist",
+            "endpoint": "NoYes",
+            "defaultValue": 1
+          }
+        ]
+      }
+    },
+    {
+      "label": "delayCount",
+      "value": 8,
+      "Operand": {
+        "params": [
+          {
+            "name": "threshold",
+            "label": "thresholdInMinutes",
+            "type": "number",
+            "defaultValue": 30
+          }
+        ]
+      }
+    },
+    {
+      "label": "numberOfChildren",
+      "value": 9
+    },
+    {
+      "label": "childCountHasInclusiveMedicalInsurance",
+      "value": 10
+    },
+    {
+      "label": "chlidrenWithDisabilityCount",
+      "value": 11
+    },
+    {
+      "label": "numberOfWivesWithInclusiveMedicalInsurance",
+      "value": 12
+    },
+    {
+      "label": "chldCountSocialAllowance",
+      "value": 13
+    },
+    {
+      "label": "actualWorkedDays",
+      "value": 14,
+      "Operand": {
+        "params": [
+          {
+            "name": "threshold",
+            "label": "thresholdInHours",
+            "type": "number",
+            "defaultValue": 8
+          },
+          {
+            "name": "ignoreDelay",
+            "label": "ignoreDelay",
+            "type": "generallist",
+            "endpoint": "NoYes",
+            "defaultValue": 1
+          }
+        ]
+      }
+    },
+    {
+      "label": "calenderWorkingDays",
+      "value": 15
+    },
+    {
+      "label": "earlyLeaveHours",
+      "value": 16
+    },
+    {
+      "label": "workedShiftCount",
+      "value": 18
+    },
+    {
+      "label": "vacationCategory",
+      "value": 20,
+      "Operand": {
+        "endpoint": "VacationCategory",
+        "type": "lookup"
+      }
+    },
+    {
+      "label": "vacationYearlyCount",
+      "value": 21
+    },
+    {
+      "label": "vacationMonthlyCount",
+      "value": 22
+    },
+    {
+      "label": "paymentMonth",
+      "value": 23
+    },
+    {
+      "label": "paymentYear",
+      "value": 24
+    },
+    {
+      "label": "vacationYearlyDays",
+      "value": 25
+    },
+    {
+      "label": "vacationMonthlyDays",
+      "value": 26
+    },
+    {
+      "label": "benefit",
+      "value": 27,
+      "Operand": {
+        "endpoint": "BenefitPlan",
+        "resourceLabel": "BenefitPlan",
+        "type": "lookup"
+      }
+    },
+    {
+      "label": "benefitPayment",
+      "value": 28,
+      "Operand": {
+        "endpoint": "BenefitPlan",
+        "resourceLabel": "BenefitPlan",
+        "type": "lookup"
+      }
+    },
+    {
+      "label": "fixedAmount",
+      "value": 29
+    },
+    {
+      "label": "absenceDaysFrom",
+      "value": 30
+    },
+    {
+      "label": "kPi",
+      "value": 31,
+      "Operand": {
+        "endpoint": "Kpi/GetKpis",
+        "type": "lookup",
+        "isCustom": true
+      }
+    },
+    {
+      "label": "appraisalTemplate",
+      "value": 32,
+      "Operand": {
+        "endpoint": "AppraisalTemplate",
+        "type": "lookup"
+      }
+    },
+    {
+      "label": "extraWork",
+      "value": 33,
+      "Operand": {
+        "params": [
+          {
+            "name": "type",
+            "label": "type",
+            "type": "generallist",
+            "endpoint": "ExtraWorkType",
+            "defaultValue": 1
+          },
+          {
+            "name": "threshold",
+            "label": "thresholdInHours",
+            "type": "number",
+            "defaultValue": 8
+          },
+          {
+            "name": "ignoreDelay",
+            "label": "ignoreDelay",
+            "type": "generallist",
+            "endpoint": "NoYes",
+            "defaultValue": 1
+          }
+        ]
+      }
+    },
+    {
+      "label": "settlementAllowance",
+      "value": 34
+    },
+    {
+      "label": "settlementDeduction",
+      "value": 35
+    },
+    {
+      "label": "vacationDays",
+      "value": 36,
+      "Operand": {
+        "endpoint": "VacationCategoryType",
+        "type": "generallist"
+      }
+    },
+    {
+      "label": "vacationCount",
+      "value": 37,
+      "Operand": {
+        "endpoint": "VacationCategoryType",
+        "type": "generallist"
+      }
+    },
+    {
+      "label": "contractedMonths",
+      "value": 38
+    },
+    {
+      "label": "eachShiftsCount",
+      "value": 39,
+      "Operand": {
+        "endpoint": "ShiftTiming",
+        "type": "generallist"
+      }
+    },
+    {
+      "label": "employeeStatusDaysCount",
+      "value": 40,
+      "Operand": {
+        "endpoint": "EmployeeStatus",
+        "type": "generallist"
+      }
+    }
+  ],
+  "PrvOperandType": [
+    {
+      "label": "fixedAmount",
+      "value": 1
+    },
+    {
+      "label": "salaryItem",
+      "value": 2
+    },
+    {
+      "label": "salaryItemGroup",
+      "value": 3
+    },
+    {
+      "label": "equation",
+      "value": 4
+    },
+    {
+      "label": "experienceYears",
+      "value": 5
+    },
+    {
+      "label": "remainingMonths",
+      "value": 6
+    },
+    {
+      "label": "otherAllowance",
+      "value": 7
+    },
+    {
+      "label": "otherDeduction",
+      "value": 8
+    },
+    {
+      "label": "loan",
+      "value": 9
+    },
+    {
+      "label": "loanSettlement",
+      "value": 10
+    },
+    {
+      "label": "delayHours",
+      "value": 11
+    },
+    {
+      "label": "absenceDays",
+      "value": 12
+    },
+    {
+      "label": "overtimeHours",
+      "value": 13
+    },
+    {
+      "label": "workedVacations",
+      "value": 14
+    },
+    {
+      "label": "workedHolidays",
+      "value": 15
+    },
+    {
+      "label": "monthlyAppraisal",
+      "value": 16
+    },
+    {
+      "label": "profitShare",
+      "value": 17
+    },
+    {
+      "label": "profitShareDownpayment",
+      "value": 18
+    },
+    {
+      "label": "benefitPlan",
+      "value": 19
+    },
+    {
+      "label": "kpi",
+      "value": 20
+    },
+    {
+      "label": "vacationCategory",
+      "value": 21
+    },
+    {
+      "label": "earlyLeaveHours",
+      "value": 22
+    },
+    {
+      "label": "absencePenaltyDays",
+      "value": 23
+    },
+    {
+      "label": "delayPenaltyDays",
+      "value": 24
+    },
+    {
+      "label": "earlyLeavePenaltyDays",
+      "value": 25
+    },
+    {
+      "label": "actualWorkedDays",
+      "value": 26
+    },
+    {
+      "label": "calenderWorkingDays",
+      "value": 27
+    },
+    {
+      "label": "salaryItemTotal",
+      "value": 28
+    },
+    {
+      "label": "buyInsuranceYearsPreviousPeriod",
+      "value": 29
+    },
+    {
+      "label": "appraisalTemplate",
+      "value": 33
+    },
+    {
+      "label": "goal",
+      "value": 34
+    },
+    {
+      "label": "benefit",
+      "value": 38
+    },
+    {
+      "label": "delayCount",
+      "value": 39
+    },
+    {
+      "label": "missionCount",
+      "value": 43
+    },
+    {
+      "label": "missionDays",
+      "value": 44
+    },
+    {
+      "label": "vacationMonthlyDays",
+      "value": 45
+    },
+    {
+      "label": "vacationMonthlyCount",
+      "value": 46
+    },
+    {
+      "label": "vacationYearlyDays",
+      "value": 47
+    },
+    {
+      "label": "vacationYearlyCount",
+      "value": 48
+    }
+  ],
+  "Months": [
+    {
+      "label": "january",
+      "value": 1
+    },
+    {
+      "label": "february",
+      "value": 2
+    },
+    {
+      "label": "march",
+      "value": 3
+    },
+    {
+      "label": "april",
+      "value": 4
+    },
+    {
+      "label": "may",
+      "value": 5
+    },
+    {
+      "label": "june",
+      "value": 6
+    },
+    {
+      "label": "july",
+      "value": 7
+    },
+    {
+      "label": "august",
+      "value": 8
+    },
+    {
+      "label": "september",
+      "value": 9
+    },
+    {
+      "label": "october",
+      "value": 10
+    },
+    {
+      "label": "november",
+      "value": 11
+    },
+    {
+      "label": "december",
+      "value": 12
+    }
+  ],
+  "CalenderDayStatus": [
+    {
+      "label": "workDay",
+      "value": 1
+    },
+    {
+      "label": "holiday",
+      "value": 2
+    },
+    {
+      "label": "weekend",
+      "value": 3
+    },
+    {
+      "label": "DayOff",
+      "value": 4
+    }
+  ],
+  "CalenderTemplateDayStatus": [
+    {
+      "label": "workDay",
+      "value": 1
+    },
+    {
+      "label": "weekend",
+      "value": 2
+    }
+  ],
+  "Day": [
+    {
+      "label": "sunday",
+      "value": 1
+    },
+    {
+      "label": "monday",
+      "value": 2
+    },
+    {
+      "label": "tuesday",
+      "value": 3
+    },
+    {
+      "label": "wednesday",
+      "value": 4
+    },
+    {
+      "label": "thursday",
+      "value": 5
+    },
+    {
+      "label": "friday",
+      "value": 6
+    },
+    {
+      "label": "saturday",
+      "value": 7
+    }
+  ],
+  "AttendRegistrationType": [
+    {
+      "label": "manual",
+      "value": 1
+    },
+    {
+      "label": "fingerprint",
+      "value": 2
+    }
+  ],
+  "IsActive": [
+    {
+      "label": "active",
+      "value": 1
+    },
+    {
+      "label": "inactive",
+      "value": 2
+    }
+  ],
+  "EmpSelectorType": [
+    {
+      "label": "all",
+      "value": 4
+    },
+    {
+      "label": "advancedFilterStore",
+      "value": 5
+    }
+  ],
+  "NoYes": [
+    {
+      "label": "no",
+      "value": 1
+    },
+    {
+      "label": "yes",
+      "value": 2
+    }
+  ],
+  "AddressContactType": [
+    {
+      "label": "phone",
+      "value": 1
+    },
+    {
+      "label": "email",
+      "value": 2
+    },
+    {
+      "label": "url",
+      "value": 3
+    },
+    {
+      "label": "fax",
+      "value": 4
+    },
+    {
+      "label": "telex",
+      "value": 5
+    }
+  ],
+  "VacationFrequency": [
+    {
+      "label": "yearly",
+      "value": 1
+    },
+    {
+      "label": "monthly",
+      "value": 2
+    },
+    {
+      "label": "weekly",
+      "value": 3
+    },
+    {
+      "label": "oneTime",
+      "value": 4
+    },
+    {
+      "label": "cycle",
+      "value": 5
+    }
+  ],
+  "SegmantCalculationMethod": [
+    {
+      "label": "allocation",
+      "value": 1
+    },
+    {
+      "label": "distribution",
+      "value": 2
+    }
+  ],
+  "SegmentedField": [
+    {
+      "label": "amount",
+      "value": 1
+    },
+    {
+      "label": "job",
+      "value": 2
+    },
+    {
+      "label": "jobDimension",
+      "value": 3
+    },
+    {
+      "label": "department",
+      "value": 4
+    },
+    {
+      "label": "departmentDimension",
+      "value": 5
+    },
+    {
+      "label": "experienceYears",
+      "value": 6
+    },
+    {
+      "label": "isInsured",
+      "value": 7
+    },
+    {
+      "label": "employeeCategory",
+      "value": 8
+    },
+    {
+      "label": "contractType",
+      "value": 9
+    },
+    {
+      "label": "contractDimension",
+      "value": 10
+    },
+    {
+      "label": "maritalStatus",
+      "value": 11
+    },
+    {
+      "label": "educationType",
+      "value": 12
+    },
+    {
+      "label": "educationCategory",
+      "value": 13
+    },
+    {
+      "label": "educationDegree",
+      "value": 14
+    },
+    {
+      "label": "hasInclusiveMedicalInsurance",
+      "value": 15
+    },
+    {
+      "label": "governorate",
+      "value": 16,
+      "isDisabled": true
+    },
+    {
+      "label": "employeeStatus",
+      "value": 17
+    },
+    {
+      "label": "withADisability",
+      "value": 18
+    },
+    {
+      "label": "gender",
+      "value": 19
+    },
+    {
+      "label": "spouseWithDisability",
+      "value": 20
+    },
+    {
+      "label": "age",
+      "value": 21
+    },
+    {
+      "label": "childCountHasInclusiveMedicalInsurance",
+      "value": 22
+    },
+    {
+      "label": "childCountSocialAllowance",
+      "value": 23
+    },
+    {
+      "label": "numberOfWivesWithInclusiveMedicalInsurance",
+      "value": 24
+    },
+    {
+      "label": "employmentType",
+      "value": 25,
+      "isDisabled": true
+    }
+  ],
+  "EntityWithDimension": [
+    {
+      "label": "department",
+      "value": 1
+    },
+    {
+      "label": "position",
+      "value": 2
+    },
+    {
+      "label": "job",
+      "value": 3
+    }
+  ],
+  "EntityWithGeneralLedgerTransaction": [
+    {
+      "label": "payroll",
+      "value": 1
+    },
+    {
+      "label": "otherPayment",
+      "value": 2
+    }
+  ],
+  "EntityWithLoanSettlement": [
+    {
+      "label": "payroll",
+      "value": 1
+    }
+  ],
+  "Entity": [
+    {
+      "label": "department",
+      "value": 1
+    },
+    {
+      "label": "position",
+      "value": 2
+    },
+    {
+      "label": "job",
+      "value": 3
+    },
+    {
+      "label": "employee",
+      "value": 4
+    },
+    {
+      "label": "candidateCV",
+      "value": 5
+    },
+    {
+      "label": "recruitmentCampaignApplicant",
+      "value": 6
+    }
+  ],
+  "AttendanceSetupType": [
+    {
+      "label": "AttendanceSetupDelay",
+      "value": 1
+    },
+    {
+      "label": "AttendanceSetupAbsence",
+      "value": 2
+    },
+    {
+      "label": "AttendanceSetupOvertime",
+      "value": 3
+    },
+    {
+      "label": "AttendanceSetupWorkedVacations",
+      "value": 4
+    },
+    {
+      "label": "AttendanceSetupWorkedHolidays",
+      "value": 5
+    },
+    {
+      "label": "AttendanceSetupAbsencePenalty",
+      "value": 6
+    },
+    {
+      "label": "AttendanceSetupEarlyLeave",
+      "value": 7
+    },
+    {
+      "label": "AttendanceSetupPartialDayLeave",
+      "value": 8
+    },
+    {
+      "label": "AttendanceSetupPenltyPermission",
+      "value": 9
+    },
+    {
+      "label": "AttendanceSetupInfirmaryPermission",
+      "value": 10
+    }
+  ],
+  "CompensationType": [
+    {
+      "label": "cash",
+      "value": 1
+    },
+    {
+      "label": "annualVacation",
+      "value": 2
+    }
+  ],
+  "EntityWithVacationBalance": [
+    {
+      "label": "contract",
+      "value": 1
+    },
+    {
+      "label": "vacationTransaction",
+      "value": 2
+    },
+    {
+      "label": "payroll",
+      "value": 3
+    },
+    {
+      "label": "vacationClosing",
+      "value": 4
+    },
+    {
+      "label": "extraWorkingDays",
+      "value": 5
+    }
+  ],
+  "AdminDecisionType": [
+    {
+      "label": "administrative",
+      "value": 1
+    },
+    {
+      "label": "hiring",
+      "value": 2
+    },
+    {
+      "label": "promotion",
+      "value": 3
+    },
+    {
+      "label": "externalTransfer",
+      "value": 4
+    },
+    {
+      "label": "internalTransfer",
+      "value": 5
+    },
+    {
+      "label": "internalMandate",
+      "value": 6
+    },
+    {
+      "label": "internalMandateEnd",
+      "value": 8
+    },
+    {
+      "label": "externalMandate",
+      "value": 9
+    },
+    {
+      "label": "externalMandateEnd",
+      "value": 11
+    },
+    {
+      "label": "endOfService",
+      "value": 12
+    },
+    {
+      "label": "bonus",
+      "value": 15
+    },
+    {
+      "label": "penalty",
+      "value": 16
+    },
+    {
+      "label": "secondment",
+      "value": 17
+    },
+    {
+      "label": "secondmentTermination",
+      "value": 18
+    },
+    {
+      "label": "specialBonus",
+      "value": 19
+    },
+    {
+      "label": "educationalIncentive",
+      "value": 20
+    },
+    {
+      "label": "suspension",
+      "value": 26
+    },
+    {
+      "label": "suspensionEnd",
+      "value": 27
+    },
+    {
+      "label": "secondmentExtension",
+      "value": 28
+    },
+    {
+      "label": "fromExternalMandate",
+      "value": 29
+    },
+    {
+      "label": "fromExternalMandateEnd",
+      "value": 31
+    },
+    {
+      "label": "fromExternalSecondment",
+      "value": 32
+    },
+    {
+      "label": "fromExternalSecondmentExtension",
+      "value": 33
+    },
+    {
+      "label": "fromExternalSecondmentTermination",
+      "value": 34
+    },
+    {
+      "label": "annualIncrease",
+      "value": 35
+    },
+    {
+      "label": "addToGroup",
+      "value": 36
+    },
+    {
+      "label": "changeGroup",
+      "value": 37
+    },
+    {
+      "label": "removeGroup",
+      "value": 38
+    },
+    {
+      "label": "hiringDirectOrder",
+      "value": 39
+    },
+    {
+      "label": "militaryService",
+      "value": 40
+    },
+    {
+      "label": "militaryServiceEnd",
+      "value": 41
+    },
+    {
+      "label": "militaryRequest",
+      "value": 42
+    },
+    {
+      "label": "militaryRequestEnd",
+      "value": 43
+    },
+    {
+      "label": "scholarship",
+      "value": 44
+    },
+    {
+      "label": "scholarshipExtend",
+      "value": 45
+    },
+    {
+      "label": "scholarshipEnd",
+      "value": 46
+    },
+    {
+      "label": "resumeWork",
+      "value": 47
+    },
+    {
+      "label": "highAuthPositionExtend",
+      "value": 48
+    },
+    {
+      "label": "highAuthPositionChange",
+      "value": 49
+    },
+    {
+      "label": "fromExternalTransfer",
+      "value": 50
+    },
+    {
+      "label": "encouragementAllowance",
+      "value": 51
+    },
+    {
+      "label": "openingBalance",
+      "value": 52
+    },
+    {
+      "label": "penaltyRemove",
+      "value": 53
+    },
+    {
+      "label": "extendContracted",
+      "value": 54
+    },
+    {
+      "label": "hiringFromExternal",
+      "value": 55
+    },
+    {
+      "label": "externalMandateExtension",
+      "value": 56
+    },
+    {
+      "label": "fromExternalMandateExtension",
+      "value": 57
+    },
+    {
+      "label": "internalMandateExtension",
+      "value": 58
+    },
+    {
+      "label": "addToSocialInsurance",
+      "value": 59
+    },
+    {
+      "label": "removeFromSocialInsurance",
+      "value": 60
+    },
+    {
+      "label": "promotionGeneral",
+      "value": 61
+    },
+    {
+      "label": "workPartTime",
+      "value": 62
+    },
+    {
+      "label": "workPartTimeEnd",
+      "value": 63
+    },
+    {
+      "label": "refrainFromWork",
+      "value": 64
+    },
+    {
+      "label": "refrainFromWorkEnd",
+      "value": 65
+    },
+    {
+      "label": "addServicePeriod",
+      "value": 66
+    },
+    {
+      "label": "suspensionFromWorkByForceOfLaw",
+      "value": 67
+    },
+    {
+      "label": "suspensionFromWorkByForceOfLawEnd",
+      "value": 68
+    },
+    {
+      "label": "assignment",
+      "value": 69
+    },
+    {
+      "label": "assignmentEnd",
+      "value": 70
+    },
+    {
+      "label": "vacationBalance",
+      "value": 71
+    },
+    {
+      "label": "reContracting",
+      "value": 72
+    },
+    {
+      "label": "reHiring",
+      "value": 73
+    },
+    {
+      "label": "appreciationRaise",
+      "value": 74
+    }
+  ],
+  "AdminDecisionPenaltyReason": [
+    {
+      "label": "deduction",
+      "value": 1
+    },
+    {
+      "label": "absence",
+      "value": 2
+    }
+  ],
+  "AdminDecisionFinancialValueType": [
+    {
+      "label": "amount",
+      "value": 1
+    },
+    {
+      "label": "days",
+      "value": 2
+    },
+    {
+      "label": "percent",
+      "value": 3
+    }
+  ],
+  "PayrollType": [
+    {
+      "label": "payroll",
+      "value": 1
+    },
+    {
+      "label": "otherPayment",
+      "value": 2
+    },
+    {
+      "label": "payrollSettlement",
+      "value": 3
+    }
+  ],
+  "EmployeeStatus": [
+    {
+      "label": "new",
+      "value": 1
+    },
+    {
+      "label": "underEvaluation",
+      "value": 2
+    },
+    {
+      "label": "working",
+      "value": 3
+    },
+    {
+      "label": "suspended",
+      "value": 4
+    },
+    {
+      "label": "termination",
+      "value": 5
+    },
+    {
+      "label": "externalTransfer",
+      "value": 6
+    },
+    {
+      "label": "endOfService",
+      "value": 7
+    },
+    {
+      "label": "nonePaidVacation",
+      "value": 8
+    },
+    {
+      "label": "militaryService",
+      "value": 9
+    },
+    {
+      "label": "militaryRequest",
+      "value": 10
+    },
+    {
+      "label": "scholarship",
+      "value": 11
+    },
+    {
+      "label": "scholarshipExtend",
+      "value": 12
+    },
+    {
+      "label": "partTime",
+      "value": 13
+    },
+    {
+      "label": "contractEndOfServiceForDeath",
+      "value": 14
+    },
+    {
+      "label": "contractEndOfServiceForResignation",
+      "value": 15
+    },
+    {
+      "label": "contractEndOfServiceForTermination",
+      "value": 16
+    },
+    {
+      "label": "contractEndOfServiceForAnnulment",
+      "value": 17
+    },
+    {
+      "label": "refrainFromWork",
+      "value": 18
+    },
+    {
+      "label": "suspendedFromWorkByLaw",
+      "value": 19
+    }
+  ],
+  "ExtraWorkingDaysType": [
+    {
+      "label": "weekend",
+      "value": 1
+    },
+    {
+      "label": "holiday",
+      "value": 2
+    },
+    {
+      "label": "offWork",
+      "value": 3
+    }
+  ],
+  "EmployeeTransChangeType": [
+    {
+      "label": "financialDegree",
+      "value": 1
+    },
+    {
+      "label": "employeeSalary",
+      "value": 2
+    },
+    {
+      "label": "authority",
+      "value": 3
+    },
+    {
+      "label": "department",
+      "value": 4
+    },
+    {
+      "label": "job",
+      "value": 5
+    },
+    {
+      "label": "bonus",
+      "value": 6
+    },
+    {
+      "label": "penalty",
+      "value": 7
+    },
+    {
+      "label": "position",
+      "value": 8
+    },
+    {
+      "label": "status",
+      "value": 9
+    },
+    {
+      "label": "mandatePosition",
+      "value": 10
+    },
+    {
+      "label": "mandateDepartment",
+      "value": 11
+    },
+    {
+      "label": "mandateEmpSalary",
+      "value": 12
+    },
+    {
+      "label": "mandateFinancialDegree",
+      "value": 13
+    },
+    {
+      "label": "mandateAuthority",
+      "value": 14
+    },
+    {
+      "label": "insertEmployeeGroup",
+      "value": 15
+    },
+    {
+      "label": "deleteEmployeeGroup",
+      "value": 16
+    },
+    {
+      "label": "positionEndDate",
+      "value": 17
+    },
+    {
+      "label": "contractEndDate",
+      "value": 18
+    }
+  ],
+  "EmployeeTransType": [
+    {
+      "label": "administrative",
+      "value": 1
+    },
+    {
+      "label": "hiring",
+      "value": 2
+    },
+    {
+      "label": "promotion",
+      "value": 3
+    },
+    {
+      "label": "externalTransfer",
+      "value": 4
+    },
+    {
+      "label": "internalTransfer",
+      "value": 5
+    },
+    {
+      "label": "internalMandatePartTime",
+      "value": 6
+    },
+    {
+      "label": "internalMandateFullTime",
+      "value": 7
+    },
+    {
+      "label": "internalMandateEnd",
+      "value": 8
+    },
+    {
+      "label": "externalMandatePartTime",
+      "value": 9
+    },
+    {
+      "label": "externalMandateFullTime",
+      "value": 10
+    },
+    {
+      "label": "externalMandateEnd",
+      "value": 11
+    },
+    {
+      "label": "endOfService",
+      "value": 12
+    },
+    {
+      "label": "endOfServiceForNonPerformance",
+      "value": 13
+    },
+    {
+      "label": "termination",
+      "value": 14
+    },
+    {
+      "label": "bonus",
+      "value": 15
+    },
+    {
+      "label": "penalty",
+      "value": 16
+    },
+    {
+      "label": "annualIncrease",
+      "value": 17
+    },
+    {
+      "label": "employeeGroup",
+      "value": 18
+    },
+    {
+      "label": "addToGroup",
+      "value": 19
+    },
+    {
+      "label": "changeGroup",
+      "value": 20
+    },
+    {
+      "label": "removeGroup",
+      "value": 21
+    },
+    {
+      "label": "secondment",
+      "value": 22
+    },
+    {
+      "label": "secondmentTermination",
+      "value": 23
+    },
+    {
+      "label": "specialBonus",
+      "value": 24
+    },
+    {
+      "label": "educationalIncentive",
+      "value": 25
+    },
+    {
+      "label": "hiringUnderEvaluation",
+      "value": 26
+    },
+    {
+      "label": "endOfServiceForDeath",
+      "value": 27
+    },
+    {
+      "label": "endOfServiceForResignation",
+      "value": 28
+    },
+    {
+      "label": "endOfServiceForLegalAge",
+      "value": 29
+    },
+    {
+      "label": "endOfServiceForEarlyPension",
+      "value": 30
+    },
+    {
+      "label": "suspension",
+      "value": 31
+    },
+    {
+      "label": "suspensionEnd",
+      "value": 32
+    },
+    {
+      "label": "secondmentExtension",
+      "value": 33
+    },
+    {
+      "label": "fromExternalMandatePartTime",
+      "value": 34
+    },
+    {
+      "label": "fromExternalMandateFullTime",
+      "value": 35
+    },
+    {
+      "label": "fromExternalMandateEnd",
+      "value": 36
+    },
+    {
+      "label": "fromExternalSecondment",
+      "value": 37
+    },
+    {
+      "label": "fromExternalSecondmentExtension",
+      "value": 38
+    },
+    {
+      "label": "fromExternalSecondmentTermination",
+      "value": 39
+    },
+    {
+      "label": "hiringDirectOrder",
+      "value": 40
+    },
+    {
+      "label": "endOfServiceForDismissal",
+      "value": 41
+    },
+    {
+      "label": "endOfServiceForImprisonment",
+      "value": 42
+    },
+    {
+      "label": "endOfServiceEndByLaw",
+      "value": 43
+    },
+    {
+      "label": "contractEndOfServiceForDeath",
+      "value": 44
+    },
+    {
+      "label": "contractEndOfServiceForResignation",
+      "value": 45
+    },
+    {
+      "label": "contractEndOfServiceForTermination",
+      "value": 46
+    },
+    {
+      "label": "contractEndOfServiceForAnnulment",
+      "value": 47
+    }
+  ],
+  "EmployeeGroupType": [
+    {
+      "label": "normal",
+      "value": 1
+    },
+    {
+      "label": "schedule",
+      "value": 2
+    }
+  ],
+  "TimeUnit": [
+    {
+      "label": "days",
+      "value": 1
+    },
+    {
+      "label": "weeks",
+      "value": 2
+    },
+    {
+      "label": "months",
+      "value": 3
+    },
+    {
+      "label": "years",
+      "value": 4
+    }
+  ],
+  "TestType": [
+    {
+      "label": "passFail",
+      "value": 1
+    },
+    {
+      "label": "score",
+      "value": 2
+    }
+  ],
+  "TestFrequency": [
+    {
+      "label": "oneTime",
+      "value": 1
+    },
+    {
+      "label": "repetition",
+      "value": 2
+    }
+  ],
+  "Importance": [
+    {
+      "label": "none",
+      "value": 0
+    },
+    {
+      "label": "one",
+      "value": 1
+    },
+    {
+      "label": "two",
+      "value": 2
+    },
+    {
+      "label": "three",
+      "value": 3
+    },
+    {
+      "label": "four",
+      "value": 4
+    },
+    {
+      "label": "five",
+      "value": 5
+    },
+    {
+      "label": "six",
+      "value": 6
+    }
+  ],
+  "ApproveStatus": [
+    {
+      "label": "new",
+      "value": 0
+    },
+    {
+      "label": "approved",
+      "value": 1
+    },
+    {
+      "label": "rejected",
+      "value": 2
+    }
+  ],
+  "ReportTemplateCategory": [
+    {
+      "label": "payroll",
+      "value": 0
+    },
+    {
+      "label": "attendance",
+      "value": 1
+    },
+    {
+      "label": "humanResources",
+      "value": 2
+    },
+    {
+      "label": "organizationalStructure",
+      "value": 3
+    }
+  ],
+  "ReportTemplateRowFields": [
+    {
+      "label": "company",
+      "value": 1
+    },
+    {
+      "label": "department",
+      "value": 2
+    },
+    {
+      "label": "functionGroup",
+      "value": 3
+    },
+    {
+      "label": "job",
+      "value": 4
+    },
+    {
+      "label": "position",
+      "value": 5
+    },
+    {
+      "label": "financialDegree",
+      "value": 6
+    },
+    {
+      "label": "employee",
+      "value": 7
+    },
+    {
+      "label": "employeeGroup",
+      "value": 8
+    }
+  ],
+  "SendBy": [
+    {
+      "label": "email",
+      "value": 0
+    },
+    {
+      "label": "notification",
+      "value": 1
+    },
+    {
+      "label": "both",
+      "value": 2
+    }
+  ],
+  "MailTemplatePlaceholderField": [
+    {
+      "label": "adminDecisionExecutionDate",
+      "value": 0
+    },
+    {
+      "label": "adminDecisionName",
+      "value": 1
+    },
+    {
+      "label": "employeeFullName",
+      "value": 2
+    },
+    {
+      "label": "adminDecisionPrevJob",
+      "value": 3
+    },
+    {
+      "label": "adminDecisionPrevFinancialDegree",
+      "value": 4
+    },
+    {
+      "label": "adminDecisionPrevFunctionGroup",
+      "value": 5
+    },
+    {
+      "label": "adminDecisionPrevSpecialityGroup",
+      "value": 6
+    },
+    {
+      "label": "adminDecisionPrevDepartment",
+      "value": 7
+    },
+    {
+      "label": "adminDecisionPrevReportToPosition",
+      "value": 8
+    },
+    {
+      "label": "adminDecisionPrevCompanyBranch",
+      "value": 9
+    },
+    {
+      "label": "adminDecisionNewJob",
+      "value": 10
+    },
+    {
+      "label": "adminDecisionNewFinancialDegree",
+      "value": 11
+    },
+    {
+      "label": "adminDecisionNewFunctionGroup",
+      "value": 12
+    },
+    {
+      "label": "adminDecisionNewSpecialityGroup",
+      "value": 13
+    },
+    {
+      "label": "adminDecisionNewDepartment",
+      "value": 14
+    },
+    {
+      "label": "adminDecisionNewReportToPosition",
+      "value": 15
+    },
+    {
+      "label": "adminDecisionNewCompanyBranch",
+      "value": 16
+    }
+  ],
+  "MailTemplatePlaceholderFieldContract": [
+    {
+      "label": "contractWeekDay",
+      "value": 1
+    },
+    {
+      "label": "contractStartDate",
+      "value": 2
+    },
+    {
+      "label": "contractEndDate",
+      "value": 3
+    },
+    {
+      "label": "contractEmpName",
+      "value": 4
+    },
+    {
+      "label": "contractEmpAddress",
+      "value": 5
+    },
+    {
+      "label": "contractEmpNationalId",
+      "value": 6
+    },
+    {
+      "label": "contractEmpMobile",
+      "value": 7
+    },
+    {
+      "label": "contractEmpEducation1",
+      "value": 11
+    },
+    {
+      "label": "contractEmpEducation2",
+      "value": 12
+    },
+    {
+      "label": "contractEmpEducation3",
+      "value": 13
+    },
+    {
+      "label": "contractEmpEducation4",
+      "value": 14
+    },
+    {
+      "label": "contractJob",
+      "value": 20
+    },
+    {
+      "label": "contractJobAreaOfExpertise1",
+      "value": 21
+    },
+    {
+      "label": "contractJobAreaOfExpertise2",
+      "value": 22
+    },
+    {
+      "label": "contractJobAreaOfExpertise3",
+      "value": 23
+    },
+    {
+      "label": "contractJobAreaOfExpertise4",
+      "value": 24
+    },
+    {
+      "label": "contractJobTask1",
+      "value": 31
+    },
+    {
+      "label": "contractJobTask2",
+      "value": 32
+    },
+    {
+      "label": "contractJobTask3",
+      "value": 33
+    },
+    {
+      "label": "contractJobTask4",
+      "value": 34
+    },
+    {
+      "label": "contractSalary",
+      "value": 40
+    },
+    {
+      "label": "contractSalaryText",
+      "value": 41
+    },
+    {
+      "label": "contractCommission",
+      "value": 45
+    },
+    {
+      "label": "contractCommissionText",
+      "value": 46
+    }
+  ],
+  "PlaceholderTable": [
+    {
+      "label": "administrationDecision",
+      "value": 0
+    },
+    {
+      "label": "contract",
+      "value": 1
+    }
+  ],
+  "EmployeePlaceholderTable": [
+    {
+      "label": "employee",
+      "value": 0
+    },
+    {
+      "label": "department",
+      "value": 1
+    },
+    {
+      "label": "position",
+      "value": 2
+    },
+    {
+      "label": "job",
+      "value": 3
+    }
+  ],
+  "EmployeePlaceholderField": [
+    {
+      "label": "fullName",
+      "value": 0
+    },
+    {
+      "label": "emailAddress",
+      "value": 1
+    },
+    {
+      "label": "address",
+      "value": 2
+    },
+    {
+      "label": "phone",
+      "value": 3
+    }
+  ],
+  "DepartmentPlaceholderField": [
+    {
+      "label": "departmentName",
+      "value": 0
+    },
+    {
+      "label": "reportToDepartment",
+      "value": 1
+    }
+  ],
+  "PositionPlaceholderField": [
+    {
+      "label": "positionName",
+      "value": 0
+    },
+    {
+      "label": "financialDegree",
+      "value": 1
+    },
+    {
+      "label": "reportToPosition",
+      "value": 2
+    }
+  ],
+  "JobPlaceholderField": [
+    {
+      "label": "jobName",
+      "value": 0
+    },
+    {
+      "label": "areaOfExpertise",
+      "value": 1
+    },
+    {
+      "label": "experienceYears",
+      "value": 2
+    }
+  ],
+  "ApplicantPlaceholderTable": [
+    {
+      "label": "application",
+      "value": 0
+    },
+    {
+      "label": "campaign",
+      "value": 1
+    },
+    {
+      "label": "vacancy",
+      "value": 2
+    },
+    {
+      "label": "interview",
+      "value": 3
+    },
+    {
+      "label": "exam",
+      "value": 4
+    }
+  ],
+  "ApplicationPlaceholderField": [
+    {
+      "label": "fullName",
+      "value": 0
+    },
+    {
+      "label": "mobile",
+      "value": 1
+    },
+    {
+      "label": "emailAddress",
+      "value": 2
+    },
+    {
+      "label": "areaOfExpertise",
+      "value": 3
+    },
+    {
+      "label": "experienceYears",
+      "value": 4
+    }
+  ],
+  "CampaignPlaceholderField": [
+    {
+      "label": "title",
+      "value": 0
+    },
+    {
+      "label": "cvDeadlineDate",
+      "value": 1
+    }
+  ],
+  "CampaignVacancyPlaceholderField": [
+    {
+      "label": "vacancy",
+      "value": 0
+    },
+    {
+      "label": "openings",
+      "value": 1
+    }
+  ],
+  "InterviewPlaceholderField": [
+    {
+      "label": "interview1",
+      "value": 0
+    },
+    {
+      "label": "interview2",
+      "value": 1
+    },
+    {
+      "label": "interview3",
+      "value": 2
+    }
+  ],
+  "ExamPlaceholderField": [
+    {
+      "label": "exam1",
+      "value": 0
+    },
+    {
+      "label": "exam2",
+      "value": 1
+    },
+    {
+      "label": "exam3",
+      "value": 2
+    }
+  ],
+  "WorkflowStatus": [
+    {
+      "label": "new",
+      "value": 1
+    },
+    {
+      "label": "submitted",
+      "value": 2
+    },
+    {
+      "label": "fullyApproved",
+      "value": 3
+    },
+    {
+      "label": "rejected",
+      "value": 4
+    },
+    {
+      "label": "calculating",
+      "value": 9
+    },
+    {
+      "label": "faildCalculate",
+      "value": 10
+    },
+    {
+      "label": "calculated",
+      "value": 11
+    },
+    {
+      "label": "posting",
+      "value": 12
+    },
+    {
+      "label": "faildPost",
+      "value": 13
+    },
+    {
+      "label": "posted",
+      "value": 999
+    }
+  ],
+  "TestResult": [
+    {
+      "label": "pass",
+      "value": 2
+    },
+    {
+      "label": "fail",
+      "value": 1
+    }
+  ],
+  "RecruitmentCampaignStatus": [
+    {
+      "label": "new",
+      "value": 0
+    },
+    {
+      "label": "advertisement",
+      "value": 1
+    },
+    {
+      "label": "applications",
+      "value": 2
+    },
+    {
+      "label": "screening",
+      "value": 3
+    },
+    {
+      "label": "interviews",
+      "value": 4
+    },
+    {
+      "label": "selection",
+      "value": 5
+    },
+    {
+      "label": "closed",
+      "value": 6
+    },
+    {
+      "label": "cancelled",
+      "value": 7
+    }
+  ],
+  "RecruitmentCampaignApplicantType": [
+    {
+      "label": "employee",
+      "value": 0
+    },
+    {
+      "label": "candidate",
+      "value": 1
+    }
+  ],
+  "RecruitmentCampaignApplicantStatus": [
+    {
+      "label": "standBy",
+      "value": 0
+    },
+    {
+      "label": "qualified",
+      "value": 1
+    },
+    {
+      "label": "rejected",
+      "value": 2
+    }
+  ],
+  "RecruitmentCampaignApplicantFinalStatus": [
+    {
+      "label": "standBy",
+      "value": 0
+    },
+    {
+      "label": "qualified",
+      "value": 1
+    },
+    {
+      "label": "rejected",
+      "value": 2
+    },
+    {
+      "label": "hired",
+      "value": 3
+    }
+  ],
+  "RecruitmentProcessTestType": [
+    {
+      "label": "interview",
+      "value": 1
+    },
+    {
+      "label": "exam",
+      "value": 2
+    }
+  ],
+  "RecruitmentCampaignVacancyStatus": [
+    {
+      "label": "open",
+      "value": 0
+    },
+    {
+      "label": "closed",
+      "value": 1
+    }
+  ],
+  "ApproverType": [
+    {
+      "label": "position",
+      "value": 0
+    },
+    {
+      "label": "directManager",
+      "value": 1
+    },
+    {
+      "label": "department",
+      "value": 2
+    }
+  ],
+  "BenefitCategory": [
+    {
+      "label": "fixed",
+      "value": 0
+    },
+    {
+      "label": "variable",
+      "value": 1
+    },
+    {
+      "label": "monthlyFixed",
+      "value": 2
+    },
+    {
+      "label": "open",
+      "value": 3
+    },
+    {
+      "label": "paid",
+      "value": 4
+    }
+  ],
+  "BenefitCategoryMulti": [
+    {
+      "label": "fixed",
+      "value": 0
+    },
+    {
+      "label": "variable",
+      "value": 1
+    },
+    {
+      "label": "monthlyFixed",
+      "value": 2
+    },
+    {
+      "label": "open",
+      "value": 3
+    }
+  ],
+  "AdvancedFilterEntity": [
+    {
+      "label": "employee",
+      "value": 0
+    }
+  ],
+  "DayType": [
+    {
+      "label": "work",
+      "value": 0
+    },
+    {
+      "label": "vacation",
+      "value": 1
+    },
+    {
+      "label": "weekend",
+      "value": 2
+    },
+    {
+      "label": "holiday",
+      "value": 3
+    },
+    {
+      "label": "fullDayMission",
+      "value": 4
+    }
+  ],
+  "MissionType": [
+    {
+      "label": "mission",
+      "value": 0
+    },
+    {
+      "label": "permission",
+      "value": 1
+    },
+    {
+      "label": "penltyPermission",
+      "value": 2
+    },
+    {
+      "label": "infirmaryPermission",
+      "value": 3
+    }
+  ],
+  "MissionSubTypes": [
+    {
+      "label": "normal",
+      "value": 0
+    },
+    {
+      "label": "paid",
+      "value": 1
+    },
+    {
+      "label": "medical",
+      "value": 2
+    }
+  ],
+  "PermissionTypes": [
+    {
+      "label": "normal",
+      "value": 0
+    },
+    {
+      "label": "deduction",
+      "value": 1
+    }
+  ],
+  "MassGenerationType": [
+    {
+      "label": "position",
+      "value": 0
+    },
+    {
+      "label": "employeeGroup",
+      "value": 1
+    },
+    {
+      "label": "paymentTemplate",
+      "value": 2
+    },
+    {
+      "label": "employeeGoalKpi",
+      "value": 3
+    },
+    {
+      "label": "employeeCalendar",
+      "value": 4
+    }
+  ],
+  "CloneType": [
+    {
+      "label": "holidayTemplate",
+      "value": 0
+    },
+    {
+      "label": "calenderTemplate",
+      "value": 1
+    },
+    {
+      "label": "equation",
+      "value": 2
+    },
+    {
+      "label": "salaryItem",
+      "value": 3
+    },
+    {
+      "label": "paymentTemplate",
+      "value": 4
+    },
+    {
+      "label": "scheduleELD",
+      "value": 5
+    },
+    {
+      "label": "organizationalStructure",
+      "value": 6
+    },
+    {
+      "label": "trainingProgram",
+      "value": 7
+    }
+  ],
+  "EmpRelEntity": [
+    {
+      "label": "calendar",
+      "value": 1
+    },
+    {
+      "label": "contract",
+      "value": 2
+    },
+    {
+      "label": "position",
+      "value": 3
+    },
+    {
+      "label": "group",
+      "value": 4
+    },
+    {
+      "label": "kpiGoal",
+      "value": 5
+    }
+  ],
+  "VacationTransactionType": [
+    {
+      "label": "vacation",
+      "value": 1
+    },
+    {
+      "label": "extraDays",
+      "value": 2
+    },
+    {
+      "label": "overTimeExchange",
+      "value": 3
+    }
+  ],
+  "StartingFrom": [
+    {
+      "label": "detailedEligibilty",
+      "value": 1
+    },
+    {
+      "label": "age",
+      "value": 2
+    },
+    {
+      "label": "organizationWorkdate",
+      "value": 3
+    },
+    {
+      "label": "insuranceYear",
+      "value": 4
+    },
+    {
+      "label": "withADisability",
+      "value": 5
+    }
+  ],
+  "EligibilityType": [
+    {
+      "label": "total",
+      "value": 1
+    },
+    {
+      "label": "perMonth",
+      "value": 2
+    }
+  ],
+  "VacationCategoryPostingType": [
+    {
+      "label": "maximum",
+      "value": 1
+    },
+    {
+      "label": "deductFrmBalance",
+      "value": 2
+    },
+    {
+      "label": "percFrmBalance",
+      "value": 3
+    },
+    {
+      "label": "maxLimit",
+      "value": 4
+    }
+  ],
+  "AutoNotificationsCondition": [
+    {
+      "label": "empUnderEvaluationEnd",
+      "value": 1
+    },
+    {
+      "label": "contarctedEmployeeContarctEnd",
+      "value": 2
+    },
+    {
+      "label": "externalSecondmentEnd",
+      "value": 3
+    },
+    {
+      "label": "externalMandateEnd",
+      "value": 4
+    },
+    {
+      "label": "eOSLegalAge",
+      "value": 5
+    },
+    {
+      "label": "penaltyRemove",
+      "value": 6
+    }
+  ],
+  "PrvAutoNotificationsCondition": [
+    {
+      "label": "empUnderEvaluationEnd",
+      "value": 1
+    },
+    {
+      "label": "contarctedEmployeeContarctEnd",
+      "value": 2
+    },
+    {
+      "label": "eOSLegalAge",
+      "value": 5
+    }
+  ],
+  "AutoNotificationsReceiverType": [
+    {
+      "label": "employee",
+      "value": 1
+    },
+    {
+      "label": "employeeGroup",
+      "value": 2
+    }
+  ],
+  "EntityWithErrorLog": [
+    {
+      "label": "payroll",
+      "value": 1
+    },
+    {
+      "label": "otherPayment",
+      "value": 2
+    },
+    {
+      "label": "monthlyAttendance",
+      "value": 3
+    }
+  ],
+  "EntityAction": [
+    {
+      "label": "calculate",
+      "value": 1
+    },
+    {
+      "label": "post",
+      "value": 2
+    }
+  ],
+  "SItemSelectorType": [
+    {
+      "label": "all",
+      "value": 4
+    },
+    {
+      "label": "advancedFilterStore",
+      "value": 5
+    }
+  ],
+  "BusinessField": [
+    {
+      "label": "governmentSector",
+      "value": 1
+    },
+    {
+      "label": "privateSector",
+      "value": 2
+    }
+  ],
+  "MilitryServiceStatus": [
+    {
+      "label": "exempted",
+      "value": 1
+    },
+    {
+      "label": "postponed",
+      "value": 2
+    },
+    {
+      "label": "completed",
+      "value": 3
+    }
+  ],
+  "EmployeeSiblingType": [
+    {
+      "label": "wife",
+      "value": 1
+    },
+    {
+      "label": "son",
+      "value": 2
+    },
+    {
+      "label": "daughter",
+      "value": 3
+    }
+  ],
+  "JobType": [
+    {
+      "label": "normal",
+      "value": 0
+    },
+    {
+      "label": "personal",
+      "value": 1
+    },
+    {
+      "label": "contracted",
+      "value": 2
+    },
+    {
+      "label": "general",
+      "value": 3
+    },
+    {
+      "label": "modular",
+      "value": 4
+    },
+    {
+      "label": "selective",
+      "value": 5
+    }
+  ],
+  "ContractType": [
+    {
+      "label": "normal",
+      "value": 0
+    },
+    {
+      "label": "contracted",
+      "value": 1
+    },
+    {
+      "label": "externalHighAuthority",
+      "value": 2
+    },
+    {
+      "label": "contractedPension",
+      "value": 3
+    },
+    {
+      "label": "casualLabour",
+      "value": 4
+    },
+    {
+      "label": "contractedComprehensiveBonus",
+      "value": 5
+    },
+    {
+      "label": "contractedSpecial",
+      "value": 6
+    }
+  ],
+  "HiringType": [
+    {
+      "label": "underEvaluation",
+      "value": 1
+    },
+    {
+      "label": "direct",
+      "value": 2
+    }
+  ],
+  "EndOfServiceType": [
+    {
+      "label": "endOfServiceForDeath",
+      "value": 1
+    },
+    {
+      "label": "endOfServiceForLegalAge",
+      "value": 2
+    },
+    {
+      "label": "endOfServiceForResignation",
+      "value": 3
+    },
+    {
+      "label": "endOfServiceForEarlyPension",
+      "value": 4
+    },
+    {
+      "label": "termination",
+      "value": 5
+    },
+    {
+      "label": "endOfServiceForNonPerformance",
+      "value": 6
+    },
+    {
+      "label": "endOfService",
+      "value": 7
+    },
+    {
+      "label": "endOfServiceForPension",
+      "value": 8
+    },
+    {
+      "label": "endOfServiceForDismissal",
+      "value": 9
+    },
+    {
+      "label": "endOfServiceForImprisonment",
+      "value": 10
+    },
+    {
+      "label": "endOfServiceEndByLaw",
+      "value": 11
+    },
+    {
+      "label": "contractEndOfServiceForDeath",
+      "value": 12
+    },
+    {
+      "label": "contractEndOfServiceForResignation",
+      "value": 13
+    },
+    {
+      "label": "contractEndOfServiceForTermination",
+      "value": 14
+    },
+    {
+      "label": "contractEndOfServiceForAnnulment",
+      "value": 15
+    },
+    {
+      "label": "endOfServiceForFullMedicalDisability",
+      "value": 16
+    },
+    {
+      "label": "endOfServiceForPartialMedicalDisability",
+      "value": 17
+    }
+  ],
+  "EndOfServiceTypeNormal": [
+    {
+      "label": "endOfServiceForDeath",
+      "value": 1
+    },
+    {
+      "label": "endOfServiceForLegalAge",
+      "value": 2
+    },
+    {
+      "label": "endOfServiceForResignation",
+      "value": 3
+    },
+    {
+      "label": "endOfServiceForEarlyPension",
+      "value": 4
+    },
+    {
+      "label": "termination",
+      "value": 5
+    },
+    {
+      "label": "endOfServiceForNonPerformance",
+      "value": 6
+    },
+    {
+      "label": "endOfServiceForPension",
+      "value": 8
+    },
+    {
+      "label": "endOfServiceForDismissal",
+      "value": 9
+    },
+    {
+      "label": "endOfServiceForImprisonment",
+      "value": 10
+    },
+    {
+      "label": "endOfServiceEndByLaw",
+      "value": 11
+    },
+    {
+      "label": "endOfServiceForFullMedicalDisability",
+      "value": 16
+    },
+    {
+      "label": "endOfServiceForPartialMedicalDisability",
+      "value": 17
+    }
+  ],
+  "EndOfServiceTypeContracted": [
+    {
+      "label": "contractEndOfServiceForDeath",
+      "value": 12
+    },
+    {
+      "label": "contractEndOfServiceForResignation",
+      "value": 13
+    },
+    {
+      "label": "contractEndOfServiceForTermination",
+      "value": 14
+    },
+    {
+      "label": "contractEndOfServiceForAnnulment",
+      "value": 15
+    }
+  ],
+  "FromExtMandateType": [
+    {
+      "label": "fromExternalMandatePartTime",
+      "value": 1
+    },
+    {
+      "label": "fromExternalMandateFullTime",
+      "value": 2
+    },
+    {
+      "label": "offWork",
+      "value": 3
+    }
+  ],
+  "ExtMandateType": [
+    {
+      "label": "externalMandatePartTime",
+      "value": 1
+    },
+    {
+      "label": "externalMandateFullTime",
+      "value": 2
+    },
+    {
+      "label": "exceptional",
+      "value": 3
+    },
+    {
+      "label": "offWork",
+      "value": 4
+    }
+  ],
+  "PrvExtMandateType": [
+    {
+      "label": "externalMandatePartTime",
+      "value": 1
+    },
+    {
+      "label": "externalMandateFullTime",
+      "value": 2
+    }
+  ],
+  "IntMandateType": [
+    {
+      "label": "internalMandatePartTime",
+      "value": 1
+    },
+    {
+      "label": "internalMandateFullTime",
+      "value": 2
+    }
+  ],
+  "PrvContractType": [
+    {
+      "label": "normal",
+      "value": 0
+    },
+    {
+      "label": "contracted",
+      "value": 1
+    },
+    {
+      "label": "contractedPension",
+      "value": 3
+    },
+    {
+      "label": "casualLabour",
+      "value": 4
+    }
+  ],
+  "PrvEndOfServiceType": [
+    {
+      "label": "endOfServiceForDeath",
+      "value": 1
+    },
+    {
+      "label": "endOfServiceForLegalAge",
+      "value": 2
+    },
+    {
+      "label": "endOfServiceForResignation",
+      "value": 3
+    },
+    {
+      "label": "termination",
+      "value": 5
+    },
+    {
+      "label": "endOfServiceForNonPerformance",
+      "value": 6
+    },
+    {
+      "label": "endOfService",
+      "value": 7
+    }
+  ],
+  "PrvSegmentedField": [
+    {
+      "label": "amount",
+      "value": 1
+    },
+    {
+      "label": "job",
+      "value": 2
+    },
+    {
+      "label": "department",
+      "value": 3
+    },
+    {
+      "label": "monthlyAppraisal",
+      "value": 5
+    },
+    {
+      "label": "experienceYears",
+      "value": 6
+    },
+    {
+      "label": "employeeGroupCategory",
+      "value": 7
+    },
+    {
+      "label": "employeeGroup",
+      "value": 9
+    },
+    {
+      "label": "isInsured",
+      "value": 10
+    },
+    {
+      "label": "contractType",
+      "value": 12
+    },
+    {
+      "label": "maritalStatus",
+      "value": 13
+    }
+  ],
+  "PrvReportTemplateRowFields": [
+    {
+      "label": "company",
+      "value": 1
+    },
+    {
+      "label": "department",
+      "value": 2
+    },
+    {
+      "label": "job",
+      "value": 4
+    },
+    {
+      "label": "position",
+      "value": 5
+    },
+    {
+      "label": "employee",
+      "value": 7
+    },
+    {
+      "label": "employeeGroup",
+      "value": 7
+    }
+  ],
+  "GoalType": [
+    {
+      "label": "normal",
+      "value": 1
+    },
+    {
+      "label": "template",
+      "value": 2
+    }
+  ],
+  "EntityTemplateGoalUse": [
+    {
+      "label": "normal",
+      "value": 1
+    },
+    {
+      "label": "hiring",
+      "value": 2
+    },
+    {
+      "label": "promotion",
+      "value": 3
+    },
+    {
+      "label": "encouragementAllowance",
+      "value": 4
+    }
+  ],
+  "EntityTemplateGoalUsePrv": [
+    {
+      "label": "normal",
+      "value": 1
+    },
+    {
+      "label": "hiring",
+      "value": 2
+    },
+    {
+      "label": "promotion",
+      "value": 3
+    }
+  ],
+  "ProgramResult": [
+    {
+      "label": "pass",
+      "value": 1
+    },
+    {
+      "label": "fail",
+      "value": 2
+    }
+  ],
+  "SortBy": [
+    {
+      "label": "employee",
+      "value": 1
+    },
+    {
+      "label": "program",
+      "value": 2
+    }
+  ],
+  "PenaltyType": [
+    {
+      "label": "notification",
+      "value": 1
+    },
+    {
+      "label": "blame",
+      "value": 2
+    },
+    {
+      "label": "warning",
+      "value": 3
+    },
+    {
+      "label": "salaryDeduction",
+      "value": 4
+    },
+    {
+      "label": "suspension",
+      "value": 5
+    },
+    {
+      "label": "promotionDelay",
+      "value": 6
+    },
+    {
+      "label": "financialDegreeDemotion",
+      "value": 7
+    },
+    {
+      "label": "financialDegreeAndSalaryDemotion",
+      "value": 8
+    },
+    {
+      "label": "endOfServicePensionPenalty",
+      "value": 9
+    },
+    {
+      "label": "endOfServiceTerminationPenalty",
+      "value": 10
+    },
+    {
+      "label": "incentiveDeduction",
+      "value": 11
+    },
+    {
+      "label": "incentiveSuspension",
+      "value": 12
+    }
+  ],
+  "HighAuthorityPenaltyType": [
+    {
+      "label": "notification",
+      "value": 1
+    },
+    {
+      "label": "blame",
+      "value": 2
+    },
+    {
+      "label": "endOfServicePensionPenalty",
+      "value": 9
+    },
+    {
+      "label": "endOfServiceTerminationPenalty",
+      "value": 10
+    }
+  ],
+  "NormalPenaltyType": [
+    {
+      "label": "warning",
+      "value": 3
+    },
+    {
+      "label": "salaryDeduction",
+      "value": 4
+    },
+    {
+      "label": "suspension",
+      "value": 5
+    },
+    {
+      "label": "promotionDelay",
+      "value": 6
+    },
+    {
+      "label": "financialDegreeDemotion",
+      "value": 7
+    },
+    {
+      "label": "financialDegreeAndSalaryDemotion",
+      "value": 8
+    },
+    {
+      "label": "endOfServicePensionPenalty",
+      "value": 9
+    },
+    {
+      "label": "endOfServiceTerminationPenalty",
+      "value": 10
+    },
+    {
+      "label": "incentiveDeduction",
+      "value": 11
+    },
+    {
+      "label": "incentiveSuspension",
+      "value": 12
+    }
+  ],
+  "LocationType": [
+    {
+      "label": "schedule",
+      "value": 1
+    },
+    {
+      "label": "program",
+      "value": 2
+    }
+  ],
+  "OffWorkEffectType": [
+    {
+      "label": "all",
+      "value": 1
+    },
+    {
+      "label": "holidayAndWeekend",
+      "value": 2
+    },
+    {
+      "label": "none",
+      "value": 3
+    }
+  ],
+  "CalculationPeriod": [
+    {
+      "label": "monthly",
+      "value": 0
+    },
+    {
+      "label": "daily",
+      "value": 1
+    }
+  ],
+  "SegmentType": [
+    {
+      "label": "percent",
+      "value": 0
+    },
+    {
+      "label": "value",
+      "value": 1
+    }
+  ],
+  "EmployeeProgramInquirySortOrder": [
+    {
+      "label": "seniority",
+      "value": 1
+    },
+    {
+      "label": "degree",
+      "value": 2
+    }
+  ],
+  "RecivedPaymentType": [
+    {
+      "label": "loanInstallment",
+      "value": 1
+    },
+    {
+      "label": "benefitEnrollmentRequestPayment",
+      "value": 2
+    }
+  ],
+  "CompanyLegalFrom": [
+    {
+      "label": "government",
+      "value": 1
+    },
+    {
+      "label": "shareHolding",
+      "value": 2
+    },
+    {
+      "label": "stockLimited",
+      "value": 3
+    },
+    {
+      "label": "limitedLiability",
+      "value": 4
+    },
+    {
+      "label": "solidarity",
+      "value": 5
+    },
+    {
+      "label": "simpleRecommendation",
+      "value": 6
+    },
+    {
+      "label": "individual",
+      "value": 7
+    }
+  ],
+  "VacationCategoryType": [
+    {
+      "label": "normal",
+      "value": 1
+    },
+    {
+      "label": "annual",
+      "value": 2
+    },
+    {
+      "label": "casual",
+      "value": 3
+    },
+    {
+      "label": "sick",
+      "value": 4
+    },
+    {
+      "label": "subset",
+      "value": 5
+    }
+  ],
+  "VacationCategorySickType": [
+    {
+      "label": "normal",
+      "value": 1
+    },
+    {
+      "label": "medium",
+      "value": 2
+    },
+    {
+      "label": "major",
+      "value": 3
+    }
+  ],
+  "YesNo": [
+    {
+      "label": "yes",
+      "value": 1
+    },
+    {
+      "label": "no",
+      "value": 2
+    }
+  ],
+  "LoanType": [
+    {
+      "label": "loan",
+      "value": 0
+    },
+    {
+      "label": "buyInsuranceYears",
+      "value": 1
+    }
+  ],
+  "BuyInsuranceYearsType": [
+    {
+      "label": "previousPeriod",
+      "value": 1
+    },
+    {
+      "label": "privateVacation",
+      "value": 2
+    },
+    {
+      "label": "secondmentInstallment",
+      "value": 3
+    },
+    {
+      "label": "internalWork",
+      "value": 4
+    }
+  ],
+  "SerialNumberSequencType": [
+    {
+      "label": "auto",
+      "value": 1
+    },
+    {
+      "label": "manual",
+      "value": 2
+    }
+  ],
+  "SerialNumberResetType": [
+    {
+      "label": "never",
+      "value": 1
+    },
+    {
+      "label": "monthly",
+      "value": 2
+    },
+    {
+      "label": "yearly",
+      "value": 3
+    }
+  ],
+  "MonthlyBalanceDistribution": [
+    {
+      "label": "no",
+      "value": 1
+    },
+    {
+      "label": "firstYear",
+      "value": 2
+    },
+    {
+      "label": "continuous",
+      "value": 3
+    }
+  ],
+  "EvaluatorType": [
+    {
+      "label": "directManager",
+      "value": 1
+    },
+    {
+      "label": "departmentHead",
+      "value": 2
+    },
+    {
+      "label": "hrGroup",
+      "value": 3
+    },
+    {
+      "label": "departmentOrSectionHead",
+      "value": 4
+    }
+  ],
+  "AppraisalType": [
+    {
+      "label": "normal",
+      "value": 1
+    },
+    {
+      "label": "average",
+      "value": 2
+    }
+  ],
+  "GoalCategory": [
+    {
+      "label": "simple",
+      "value": 1
+    },
+    {
+      "label": "total",
+      "value": 2
+    }
+  ],
+  "RecruitmentProjectStatus": [
+    {
+      "label": "new",
+      "value": 1
+    },
+    {
+      "label": "start",
+      "value": 2
+    },
+    {
+      "label": "cancelled",
+      "value": 3
+    },
+    {
+      "label": "end",
+      "value": 999
+    }
+  ],
+  "RecruitmentProjectSlotStatus": [
+    {
+      "label": "new",
+      "value": 1
+    },
+    {
+      "label": "registration",
+      "value": 2
+    },
+    {
+      "label": "examAndInterview",
+      "value": 3
+    },
+    {
+      "label": "finalExam",
+      "value": 4
+    },
+    {
+      "label": "cancelled",
+      "value": 5
+    },
+    {
+      "label": "end",
+      "value": 999
+    }
+  ],
+  "RecruitmentProjectSlotType": [
+    {
+      "label": "job",
+      "value": 1
+    },
+    {
+      "label": "position",
+      "value": 2
+    }
+  ],
+  "IntegrationMode": [
+    {
+      "label": "none",
+      "value": 1
+    },
+    {
+      "label": "ax2012",
+      "value": 2
+    },
+    {
+      "label": "d365",
+      "value": 3
+    }
+  ],
+  "DepartmentType": [
+    {
+      "label": "normal",
+      "value": 1
+    },
+    {
+      "label": "high",
+      "value": 2
+    },
+    {
+      "label": "area",
+      "value": 3
+    },
+    {
+      "label": "sales",
+      "value": 4
+    },
+    {
+      "label": "normalBranch",
+      "value": 5
+    },
+    {
+      "label": "normalSection",
+      "value": 6
+    }
+  ],
+  "DepartmentSalesType": [
+    {
+      "label": "total",
+      "value": 1
+    },
+    {
+      "label": "branch",
+      "value": 2
+    },
+    {
+      "label": "canteen",
+      "value": 3
+    },
+    {
+      "label": "areaBranch",
+      "value": 4
+    },
+    {
+      "label": "highBranch",
+      "value": 5
+    }
+  ],
+  "EmployeeCategory": [
+    {
+      "label": "civilian",
+      "value": 1
+    },
+    {
+      "label": "military",
+      "value": 2
+    }
+  ],
+  "MilitaryOfficerType": [
+    {
+      "label": "dutyOfficer",
+      "value": 1
+    },
+    {
+      "label": "dutyNonCommissionedOfficer",
+      "value": 2
+    },
+    {
+      "label": "pensionedOfficer",
+      "value": 3
+    },
+    {
+      "label": "pensionedNonCommissionedOfficer",
+      "value": 4
+    }
+  ],
+  "EnrollmentType": [
+    {
+      "label": "enrollment",
+      "value": 1
+    },
+    {
+      "label": "disenrollment",
+      "value": 2
+    }
+  ],
+  "PayrollEmployeeContractType": [
+    {
+      "label": "all",
+      "value": 1
+    },
+    {
+      "label": "normal",
+      "value": 2
+    },
+    {
+      "label": "contracted",
+      "value": 3
+    }
+  ],
+  "positionCaretakerType": [
+    {
+      "label": "reportingTo",
+      "value": 1
+    },
+    {
+      "label": "self",
+      "value": 2
+    },
+    {
+      "label": "employee",
+      "value": 3
+    }
+  ],
+  "positionCaretakerTypeMinusSelf": [
+    {
+      "label": "reportingTo",
+      "value": 1
+    },
+    {
+      "label": "employee",
+      "value": 3
+    }
+  ],
+  "Religion": [
+    {
+      "label": "muslim",
+      "value": 1
+    },
+    {
+      "label": "christian",
+      "value": 2
+    },
+    {
+      "label": "jew",
+      "value": 3
+    }
+  ],
+  "LedgerAccountExceptionReference": [
+    {
+      "label": "department",
+      "value": 1
+    },
+    {
+      "label": "job",
+      "value": 2
+    },
+    {
+      "label": "employeeGroup",
+      "value": 3
+    },
+    {
+      "label": "contractType",
+      "value": 4
+    },
+    {
+      "label": "bank",
+      "value": 5
+    }
+  ],
+  "GracePeriodExceptionReference": [
+    {
+      "label": "religion",
+      "value": 1
+    },
+    {
+      "label": "General",
+      "value": 2
+    }
+  ],
+  "VacationTemplateSpecification": [
+    {
+      "label": "default",
+      "value": 0
+    },
+    {
+      "label": "contractType",
+      "value": 1
+    }
+  ],
+  "AttendanceExceptionReference": [
+    {
+      "label": "all",
+      "value": 0
+    }
+  ],
+  "AttendanceExceptionTiming": [
+    {
+      "label": "morning",
+      "value": 0
+    },
+    {
+      "label": "evening",
+      "value": 1
+    }
+  ],
+  "GraceTiming": [
+    {
+      "label": "GraceTimeIn",
+      "value": 0
+    },
+    {
+      "label": "GraceTimeOut",
+      "value": 1
+    }
+  ],
+  "AttendanceExceptionSetupType": [
+    {
+      "label": "normal",
+      "value": 0
+    },
+    {
+      "label": "deduction",
+      "value": 1
+    }
+  ],
+  "AttendanceExceptionSetupCalculationType": [
+    {
+      "label": "actual",
+      "value": 0
+    },
+    {
+      "label": "whole",
+      "value": 1
+    }
+  ],
+  "VacationSystemOrigin": [
+    {
+      "label": "none",
+      "value": 0
+    },
+    {
+      "label": "attendanceException",
+      "value": 1
+    },
+    {
+      "label": "vacationTransactionMassGenerate",
+      "value": 2
+    },
+    {
+      "label": "permissionDeduction",
+      "value": 3
+    },
+    {
+      "label": "penaltyPermission",
+      "value": 4
+    },
+    {
+      "label": "openingBalance",
+      "value": 5
+    }
+  ],
+  "LicenceValidateResult": [
+    {
+      "label": "missingLicenceData",
+      "value": 0
+    },
+    {
+      "label": "valid",
+      "value": 1
+    },
+    {
+      "label": "expiredInputNewLicence",
+      "value": 2
+    },
+    {
+      "label": "expiredLockTransactionButtons",
+      "value": 3
+    }
+  ],
+  "TaxCalculationMethod": [
+    {
+      "label": "automatic",
+      "value": 0
+    },
+    {
+      "label": "manual",
+      "value": 1
+    }
+  ],
+  "CalculationMethod": [
+    {
+      "label": "SalaryItem",
+      "value": 1
+    },
+    {
+      "label": "Contract",
+      "value": 2
+    },
+    {
+      "label": "Payment",
+      "value": 3
+    },
+    {
+      "label": "GlobalPeriod",
+      "value": 4
+    }
+  ],
+  "ContractJobFinancialDegreeSetup": [
+    {
+      "label": "job",
+      "value": 0
+    },
+    {
+      "label": "financialDegree",
+      "value": 1
+    }
+  ],
+  "FinancialDegreeType": [
+    {
+      "label": "normal",
+      "value": 0
+    },
+    {
+      "label": "modular",
+      "value": 1
+    },
+    {
+      "label": "selective",
+      "value": 2
+    }
+  ],
+  "Timing": [
+    {
+      "label": "morning",
+      "value": 0
+    },
+    {
+      "label": "evening",
+      "value": 1
+    }
+  ],
+  "TrainingProgramCourseStatus": [
+    {
+      "label": "open",
+      "value": 0
+    },
+    {
+      "label": "closed",
+      "value": 1
+    }
+  ],
+  "EmployeeGroupLineStatus": [
+    {
+      "label": "in",
+      "value": 1
+    },
+    {
+      "label": "out",
+      "value": 2
+    }
+  ],
+  "kpisubCategoryType": [
+    {
+      "label": "manual",
+      "value": 0
+    },
+    {
+      "label": "automatic",
+      "value": 1
+    }
+  ],
+  "SalaryItemUsage": [
+    {
+      "label": "payments",
+      "value": 0
+    },
+    {
+      "label": "kpi",
+      "value": 1
+    }
+  ],
+  "DefaultSalaryItemType": [
+    {
+      "label": "payroll",
+      "value": 0
+    },
+    {
+      "label": "paymentTemplate",
+      "value": 1
+    }
+  ],
+  "PaymentMethod": [
+    {
+      "label": "none",
+      "value": 0
+    },
+    {
+      "label": "payroll",
+      "value": 1
+    },
+    {
+      "label": "receivedPayment",
+      "value": 2
+    }
+  ],
+  "RoundType": [
+    {
+      "label": "up",
+      "value": 0
+    },
+    {
+      "label": "down",
+      "value": 1
+    }
+  ],
+  "TrainingAppraisalWay": [
+    {
+      "label": "degrees",
+      "value": 1
+    },
+    {
+      "label": "pass",
+      "value": 2
+    }
+  ],
+  "CreationOrigin": [
+    {
+      "label": "dataEntry",
+      "value": 0
+    },
+    {
+      "label": "excelImport",
+      "value": 1
+    },
+    {
+      "label": "system",
+      "value": 2
+    }
+  ],
+  "VacationBalanceConsumption": [
+    {
+      "label": "total",
+      "value": 0
+    },
+    {
+      "label": "current",
+      "value": 1
+    },
+    {
+      "label": "opening",
+      "value": 2
+    }
+  ],
+  "CalculationMode": [
+    {
+      "label": "draft",
+      "value": 0
+    },
+    {
+      "label": "final",
+      "value": 1
+    }
+  ],
+  "TrainingBudgetType": [
+    {
+      "label": "planned",
+      "value": 0
+    },
+    {
+      "label": "unplanned",
+      "value": 1
+    },
+    {
+      "label": "other",
+      "value": 2
+    }
+  ],
+  "ShiftTiming": [
+    {
+      "label": "morning",
+      "value": 0
+    },
+    {
+      "label": "evening",
+      "value": 1
+    },
+    {
+      "label": "night",
+      "value": 2
+    }
+  ],
+  "TrainingProgramCourseCategory": [
+    {
+      "label": "internal",
+      "value": 0
+    },
+    {
+      "label": "external",
+      "value": 1
+    }
+  ],
+  "ContainerIncentiveTypePaymentMethod": [
+    {
+      "label": "count",
+      "value": 0
+    },
+    {
+      "label": "avarage",
+      "value": 1
+    }
+  ],
+  "OvertimeDaysType": [
+    {
+      "label": "after",
+      "value": 0
+    },
+    {
+      "label": "before",
+      "value": 1
+    },
+    {
+      "label": "beforeAndAfter",
+      "value": 2
+    }
+  ],
+  "YearType": [
+    {
+      "label": "vacation",
+      "value": 0
+    },
+    {
+      "label": "fiscal",
+      "value": 1
+    }
+  ],
+  "PenaltyRepeatedSegmentType": [
+    {
+      "label": "first",
+      "value": 0
+    },
+    {
+      "label": "second",
+      "value": 1
+    },
+    {
+      "label": "third",
+      "value": 2
+    },
+    {
+      "label": "fourth",
+      "value": 3
+    }
+  ],
+  "SalaryItemIgnoreDistributionEntity": [
+    {
+      "label": "hiring",
+      "value": 0
+    },
+    {
+      "label": "endOfService",
+      "value": 1
+    },
+    {
+      "label": "nonPaidVacation",
+      "value": 2
+    },
+    {
+      "label": "workPartTime",
+      "value": 3
+    },
+    {
+      "label": "sickLeave",
+      "value": 4
+    },
+    {
+      "label": "refrainFromWork",
+      "value": 5
+    },
+    {
+      "label": "suspension",
+      "value": 6
+    },
+    {
+      "label": "suspensionFromWorkByForceOfLaw",
+      "value": 7
+    }
+  ],
+  "CriteriaOption": [
+    {
+      "label": "department",
+      "value": 0
+    },
+    {
+      "label": "departmentHierarchy",
+      "value": 1
+    },
+    {
+      "label": "contractTemplate",
+      "value": 2
+    },
+    {
+      "label": "jobCategoryC",
+      "value": 3
+    },
+    {
+      "label": "employeeFinancialDegree",
+      "value": 4
+    }
+  ],
+  "StatusMessage": [
+    {
+      "label": "badRequest",
+      "value": 400
+    },
+    {
+      "label": "serverError",
+      "value": 500
+    },
+    {
+      "label": "inValidWorkflow",
+      "value": 405
+    },
+    {
+      "label": "notFound",
+      "value": 404
+    },
+    {
+      "label": "success",
+      "value": 200
+    },
+    {
+      "label": "addFailed",
+      "value": 406
+    },
+    {
+      "label": "snConfigNotFound",
+      "value": 407
+    },
+    {
+      "label": "snConfigError",
+      "value": 408
+    }
+  ],
+  "PageName": [
+    {
+      "label": "Position",
+      "value": 1
+    },
+    {
+      "label": "Department",
+      "value": 2
+    },
+    {
+      "label": "Job",
+      "value": 3
+    },
+    {
+      "label": "Contract",
+      "value": 4
+    }
+  ],
+  "EmployeeIdNumberType": [
+    {
+      "label": "nationalIdCard",
+      "value": 1
+    },
+    {
+      "label": "driverLicense",
+      "value": 2
+    },
+    {
+      "label": "passport",
+      "value": 3
+    }
+  ],
+  "SalaryItemDistribution": [
+    {
+      "label": "default",
+      "value": 0
+    },
+    {
+      "label": "ignore",
+      "value": 1
+    },
+    {
+      "label": "custom",
+      "value": 2
+    }
+  ],
+  "ParentEntityType": [
+    {
+      "label": "Hiring",
+      "value": 1
+    },
+    {
+      "label": "InternalTransfer",
+      "value": 2
+    },
+    {
+      "label": "EndOfService",
+      "value": 3
+    },
+    {
+      "label": "VacationTransaction",
+      "value": 4
+    },
+    {
+      "label": "PartialDayLeave",
+      "value": 5
+    },
+    {
+      "label": "VacationClosing",
+      "value": 6
+    },
+    {
+      "label": "VacationBalance",
+      "value": 7
+    },
+    {
+      "label": "WorkPartTime",
+      "value": 8
+    },
+    {
+      "label": "WorkPartTimeEnd",
+      "value": 9
+    },
+    {
+      "label": "ContractSalaryItemMassChange",
+      "value": 10
+    },
+    {
+      "label": "DepartmentModification",
+      "value": 11
+    },
+    {
+      "label": "HrResumeWork",
+      "value": 12
+    },
+    {
+      "label": "AddToSocialInsurance",
+      "value": 13
+    },
+    {
+      "label": "RemoveFromSocialInsurance",
+      "value": 14
+    },
+    {
+      "label": "ConfirmEmployment",
+      "value": 15
+    }
+  ],
+  "SourceType": [
+    {
+      "label": "Calendar",
+      "value": 1
+    },
+    {
+      "label": "ScheduleEmployee",
+      "value": 2
+    },
+    {
+      "label": "ScheduleEmployeeGroup",
+      "value": 3
+    },
+    {
+      "label": "PlannedAttendance",
+      "value": 4
+    },
+    {
+      "label": "WorkPartTime",
+      "value": 5
+    },
+    {
+      "label": "ExtraWorkWeekend",
+      "value": 6
+    },
+    {
+      "label": "ExtraWorkHoliday",
+      "value": 7
+    }
+  ],
+  "TransactionName": [
+    {
+      "label": "Hiring",
+      "value": 1,
+      "isReported": 2
+    },
+    {
+      "label": "InternalTransfer",
+      "value": 2,
+      "isReported": 2
+    },
+    {
+      "label": "EndOfService",
+      "value": 3,
+      "isReported": 2
+    },
+    {
+      "label": "VacationTransaction",
+      "value": 4,
+      "isReported": 2
+    },
+    {
+      "label": "PartialDayLeave",
+      "value": 5,
+      "isReported": 2
+    },
+    {
+      "label": "Mission",
+      "value": 6,
+      "isReported": 2
+    },
+    {
+      "label": "AttendanceException",
+      "value": 7,
+      "isReported": 2
+    },
+    {
+      "label": "BenefitEnrollmentRequest",
+      "value": 8
+    },
+    {
+      "label": "BenefitDisenrollmentRequest",
+      "value": 9
+    },
+    {
+      "label": "BenefitPaymentException",
+      "value": 10,
+      "isReported": 2
+    },
+    {
+      "label": "MonthlyBenefit",
+      "value": 11
+    },
+    {
+      "label": "RecivedPayment",
+      "value": 12,
+      "isReported": 2
+    },
+    {
+      "label": "OvertimeDays",
+      "value": 13
+    },
+    {
+      "label": "VacationClosing",
+      "value": 14
+    },
+    {
+      "label": "DepartmentModification",
+      "value": 15
+    },
+    {
+      "label": "OtherPayment",
+      "value": 16
+    },
+    {
+      "label": "Payroll",
+      "value": 17
+    },
+    {
+      "label": "VacationBalance",
+      "value": 18
+    },
+    {
+      "label": "ContractSalaryItemMassUpdateHeader",
+      "value": 19
+    },
+    {
+      "label": "WorkPartTime",
+      "value": 20,
+      "isReported": 2
+    },
+    {
+      "label": "WorkPartTimeEnd",
+      "value": 21,
+      "isReported": 2
+    },
+    {
+      "label": "PaymentSalaryItemMassValue",
+      "value": 22
+    },
+    {
+      "label": "ContractSalaryItemMassChange",
+      "value": 23
+    },
+    {
+      "label": "HrResumeWork",
+      "value": 24,
+      "isReported": 2
+    },
+    {
+      "label": "ExtraWorkWeekend",
+      "value": 25
+    },
+    {
+      "label": "ExtraWorkHoliday",
+      "value": 26
+    },
+    {
+      "label": "AddToSocialInsurance",
+      "value": 27,
+      "isReported": 2
+    },
+    {
+      "label": "RemoveFromSocialInsurance",
+      "value": 28,
+      "isReported": 2
+    },
+    {
+      "label": "MonthlyAttendance",
+      "value": 29,
+      "isReported": 2
+    },
+    {
+      "label": "PayrollSettlement",
+      "value": 30,
+      "isReported": 2
+    },
+    {
+      "label": "TrainingBudge",
+      "value": 31,
+      "isReported": 2
+    },
+    {
+      "label": "MainAppraisal",
+      "value": 32,
+      "isReported": 2
+    },
+    {
+      "label": "EvaluatorAppraisal",
+      "value": 33,
+      "isReported": 2
+    },
+    {
+      "label": "AverageAppraisal",
+      "value": 34,
+      "isReported": 2
+    },
+    {
+      "label": "GeneralLedger",
+      "value": 35,
+      "isReported": 2
+    },
+    {
+      "label": "ConfirmEmployment",
+      "value": 36,
+      "isReported": 2
+    },
+    {
+      "label": "EmployeeModificationRequest",
+      "value": 37,
+      "isReported": 2
+    },
+    {
+      "label": "MissedAttendanceRequest",
+      "value": 38,
+      "isReported": 2
+    }
+  ],
+  "StatusWorkFlow": [
+    {
+      "label": "pending",
+      "value": 1
+    },
+    {
+      "label": "approved",
+      "value": 2
+    },
+    {
+      "label": "fullyApproved",
+      "value": 3
+    },
+    {
+      "label": "rejected",
+      "value": 4
+    }
+  ],
+  "PayrollSettlementOption": [
+    {
+      "label": "StandAlone",
+      "value": 0
+    },
+    {
+      "label": "EquationOperandNet",
+      "value": 1
+    },
+    {
+      "label": "NextMonthPerSalaryItem",
+      "value": 2
+    }
+  ],
+  "ModuleName": [
+    {
+      "label": "EmployeeFiles",
+      "value": 1
+    },
+    {
+      "label": "OrganizationDev",
+      "value": 2
+    },
+    {
+      "label": "HRFunctions",
+      "value": 3
+    },
+    {
+      "label": "PerformanceAppraisal",
+      "value": 4
+    },
+    {
+      "label": "Recruitment",
+      "value": 5
+    },
+    {
+      "label": "Dues",
+      "value": 6
+    },
+    {
+      "label": "TimeManagement",
+      "value": 7
+    },
+    {
+      "label": "Vacations",
+      "value": 8
+    },
+    {
+      "label": "Benefits",
+      "value": 9
+    },
+    {
+      "label": "EmployeeProfiles",
+      "value": 10
+    }
+  ],
+  "ActionName": [
+    {
+      "label": "Non",
+      "value": 0
+    },
+    {
+      "label": "Add",
+      "value": 1
+    },
+    {
+      "label": "Update",
+      "value": 2
+    },
+    {
+      "label": "Delete",
+      "value": 3
+    }
+  ],
+  "WorkflowPositionType": [
+    {
+      "label": "Position",
+      "value": 1
+    },
+    {
+      "label": "DirectManager",
+      "value": 2
+    },
+    {
+      "label": "DepartmentManager",
+      "value": 3
+    }
+  ],
+  "SignatureFonts": [
+    {
+      "label": "DancingScript",
+      "value": 1
+    },
+    {
+      "label": "Humble",
+      "value": 2
+    },
+    {
+      "label": "Signatie",
+      "value": 3
+    },
+    {
+      "label": "Californian",
+      "value": 4
+    },
+    {
+      "label": "Caveat",
+      "value": 5
+    },
+    {
+      "label": "Cintarini",
+      "value": 6
+    },
+    {
+      "label": "Dalton White",
+      "value": 7
+    },
+    {
+      "label": "Eagle Horizon",
+      "value": 8
+    },
+    {
+      "label": "Arslan Wessam B",
+      "value": 9,
+      "ar": true
+    },
+    {
+      "label": "Leila Light",
+      "value": 10,
+      "ar": true
+    },
+    {
+      "label": "Sayeh",
+      "value": 11,
+      "ar": true
+    },
+    {
+      "label": "Tharwat Emara Modern Regular",
+      "value": 12,
+      "ar": true
+    },
+    {
+      "label": "Rzgar",
+      "value": 13,
+      "ar": true
+    },
+    {
+      "label": "B Fatemi",
+      "value": 14,
+      "ar": true
+    },
+    {
+      "label": "Alnaqaya S",
+      "value": 15,
+      "ar": true
+    },
+    {
+      "label": "Dima Ravan Nevis",
+      "value": 16,
+      "ar": true
+    }
+  ],
+  "SignatureType": [
+    {
+      "label": "image",
+      "value": 1
+    },
+    {
+      "label": "text",
+      "value": 2
+    }
+  ],
+  "AppraisalMethod": [
+    {
+      "label": "normal",
+      "value": 1
+    },
+    {
+      "label": "dynamic360",
+      "value": 2
+    }
+  ],
+  "EmployeeSelectionMethod": [
+    {
+      "label": "Criteria",
+      "value": 1
+    },
+    {
+      "label": "Selector",
+      "value": 2
+    }
+  ],
+  "AppraisalPeriod": [
+    {
+      "label": "Month",
+      "value": 1
+    },
+    {
+      "label": "QuarterYear",
+      "value": 2
+    },
+    {
+      "label": "HalfYear",
+      "value": 3
+    },
+    {
+      "label": "Year",
+      "value": 4
+    }
+  ],
+  "QuarterPeriod": [
+    {
+      "label": "FirstQuarter",
+      "value": 1
+    },
+    {
+      "label": "SecondQuarter",
+      "value": 2
+    },
+    {
+      "label": "ThirdQuarter",
+      "value": 3
+    },
+    {
+      "label": "FourthQuarter ",
+      "value": 4
+    }
+  ],
+  "HalfYearPeriod": [
+    {
+      "label": "FirstHalfYear",
+      "value": 1
+    },
+    {
+      "label": "SecondHalfYear",
+      "value": 2
+    }
+  ],
+  "AppraisalTemplateEvaluatorType": [
+    {
+      "label": "Position",
+      "value": 1
+    },
+    {
+      "label": "DepartmentManager",
+      "value": 2
+    },
+    {
+      "label": "DirectManager",
+      "value": 3
+    }
+  ],
+  "FingerPrintType": [
+    {
+      "label": "UserInput",
+      "value": 1
+    },
+    {
+      "label": "Excel",
+      "value": 2
+    },
+    {
+      "label": "MobileApp",
+      "value": 3
+    },
+    {
+      "label": "Machine",
+      "value": 4
+    }
+  ],
+  "TransactionSource": [
+    {
+      "label": "Payroll",
+      "value": 1
+    },
+    {
+      "label": "OtherPayment",
+      "value": 2
+    }
+  ],
+  "SalaryItemReferenceType": [
+    {
+      "label": "BenefitPlan",
+      "value": 1
+    }
+  ],
+  "ForgetFinger": [
+    {
+      "label": "TimeIn",
+      "value": 1
+    },
+    {
+      "label": "TimeOut",
+      "value": 2
+    },
+    {
+      "label": "TimeInAndOut",
+      "value": 3
+    }
+  ],
+  "DrivingLicenseType": [
+    {
+      "label": "Private",
+      "value": 1
+    },
+    {
+      "label": "ThirdClass",
+      "value": 2
+    },
+    {
+      "label": "SecondClass",
+      "value": 3
+    },
+    {
+      "label": "FirstClass",
+      "value": 4
+    },
+    {
+      "label": "AgriculturalTractor",
+      "value": 5
+    },
+    {
+      "label": "MetroOrTram",
+      "value": 6
+    },
+    {
+      "label": "PrivateMotorcycle",
+      "value": 7
+    },
+    {
+      "label": "TukTuk",
+      "value": 8
+    },
+    {
+      "label": "LightMotorcycle",
+      "value": 9
+    },
+    {
+      "label": "Military",
+      "value": 10
+    },
+    {
+      "label": "Police",
+      "value": 11
+    },
+    {
+      "label": "Trial",
+      "value": 12
+    },
+    {
+      "label": "TemporaryLearner",
+      "value": 13
+    }
+  ],
+  "KpiType": [
+    {
+      "label": "manual",
+      "value": 0
+    },
+    {
+      "label": "automatic",
+      "value": 1
+    }
+  ],
+  "columnOptions": [
+    {
+      "label": "1",
+      "value": 1
+    },
+    {
+      "label": "2",
+      "value": 2
+    },
+    {
+      "label": "3",
+      "value": 3
+    },
+    {
+      "label": "4",
+      "value": 4
+    }
+  ],
+  "DocumentUploadMode": [
+    {
+      "label": "files",
+      "value": 1
+    },
+    {
+      "label": "single",
+      "value": 2
+    },
+    {
+      "label": "dual",
+      "value": 3
+    }
+  ],
+  "EmployeeDocumentType": [
+    {
+      "label": "NationalId",
+      "value": 1
+    },
+    {
+      "label": "DriverLicense",
+      "value": 2
+    },
+    {
+      "label": "Passport",
+      "value": 3
+    },
+    {
+      "label": "MilitaryCertificate",
+      "value": 4
+    },
+    {
+      "label": "BirthCertificate",
+      "value": 5
+    },
+    {
+      "label": "Custom",
+      "value": 99
+    }
+  ],
+  "DocumentType": [
+    {
+      "label": "text",
+      "value": 0
+    },
+    {
+      "label": "number",
+      "value": 1
+    },
+    {
+      "label": "date",
+      "value": 2
+    },
+    {
+      "label": "select",
+      "value": 3
+    }
+  ]
+}

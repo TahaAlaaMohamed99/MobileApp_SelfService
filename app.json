@@ -1,0 +1,96 @@
+{
+  "expo": {
+    "name": "MegaHR Next",
+    "slug": "MegaHrNext",
+    "scheme": "mega.hr.next",
+    "version": "1.0.6",
+    "orientation": "portrait",
+    "icon": "./src/assets/images/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "icon": {
+        "light": "./src/assets/images/ios-icon-default.png",
+        "dark": "./src/assets/images/ios-icon-dark.png",
+        "tinted": "./src/assets/images/ios-icon-tinted.png"
+      },
+      "infoPlist": {
+        "ExpoLocalization_supportsRTL": true,
+        "CFBundleLocalizations": [
+          "en",
+          "ar"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/adaptive-icon.png",
+        "monochromeImage": "./src/assets/images/android-icon-monochrome.png",
+        "backgroundColor": "#ffffff"
+      },
+      "softwareKeyboardLayoutMode": "resize",
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "package": "com.megahr.next"
+    },
+    "web": {
+      "favicon": "./src/assets/favicon.png"
+    },
+    "extra": {
+      "API_URL": "https://www.megahrnext.com/mobile-api",
+      "Google_Play_url": "https://play.google.com/store/apps/details?id=com.megahr.next",
+      "supportsRTL": true,
+      "eas": {
+        "projectId": "ba520af0-4495-4bd3-95f9-56865db84544"
+      }
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-location"
+      ],
+      [
+        "expo-localization",
+        {
+          "supportedLocales": {
+            "ios": [
+              "en",
+              "ar"
+            ],
+            "android": [
+              "en",
+              "ar"
+            ]
+          }
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "ios": {
+            "backgroundColor": "#F0F4FF",
+            "image": "./src/assets/splash-icon.png",
+            "resizeMode": "cover"
+          },
+          "android": {
+            "backgroundColor": "#F0F4FF",
+            "image": "./src/assets/splash-icon.png",
+            "imageWidth": 200,
+            "dark": {
+              "backgroundColor": "#F0F4FF",
+              "image": "./src/assets/splash-icon.png",
+              "imageWidth": 200
+            }
+          }
+        }
+      ],
+      "expo-audio",
+      "expo-asset",
+      "expo-font",
+      "expo-router",
+      "expo-status-bar"
+    ]
+  }
+}
