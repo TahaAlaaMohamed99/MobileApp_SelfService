@@ -34,7 +34,11 @@
       "permissions": [
         "android.permission.ACCESS_COARSE_LOCATION",
         "android.permission.ACCESS_FINE_LOCATION",
-        "android.permission.CAMERA"
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
       ],
       "package": "com.megahr.next"
     },
@@ -45,8 +49,9 @@
       "API_URL": "https://www.megahrnext.com/mobile-api",
       "Google_Play_url": "https://play.google.com/store/apps/details?id=com.megahr.next",
       "supportsRTL": true,
+      "router": {},
       "eas": {
-        "projectId": "ba520af0-4495-4bd3-95f9-56865db84544"
+        "projectId": "f7ac52a1-6fab-45cb-885b-89353526d633"
       }
     },
     "plugins": [
@@ -94,7 +99,7 @@
       "expo-font",
       "expo-router",
       "expo-status-bar",
-      "react-native-vision-camera",
+      "expo-camera",
       [
         "expo-build-properties",
         {
@@ -103,6 +108,7 @@
           }
         }
       ]
-    ]
+    ],
+    "owner": "taha2024656"
   }
 }
